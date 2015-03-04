@@ -1,0 +1,7 @@
+punkte
+colorize
+gleiche farbe wie vorgeschlagen
+blau
+helligkeit
+
+-85 ca.
