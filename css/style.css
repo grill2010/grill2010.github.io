@@ -837,6 +837,12 @@
 				background-image: url('../images/droidJoy/banner.jpg');
 				min-height: 450px;
 			}
+			
+			#main > section.one.tentless
+			{
+				background-image: url('../images/tentless/banner.jpg');
+				min-height: 450px;
+			}
 
 			#main > section.two
 			{
