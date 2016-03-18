@@ -997,3 +997,11 @@
 {
 	height: 50px;
 }
+
+p.hint
+{
+	text-align: center !important;
+	font-weight: bold;
+	color: orange;
+	font-size: 17px;
+}
