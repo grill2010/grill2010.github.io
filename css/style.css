@@ -868,6 +868,11 @@
             {
                 background-color: #d9dedd;
             }
+			
+			#main > section.seven
+            {
+                background-color: #d4d9d8;
+            }
 
 /*********************************************************************************/
 /* iframe                                                                          */
@@ -1004,4 +1009,24 @@ p.hint
 	font-weight: bold;
 	color: orange;
 	font-size: 0.8em;
+}
+
+.text-align-left
+{
+	text-align: left;
+}
+
+.no-margin
+{
+	margin: 0;
+}
+
+.medium-font
+{
+	font-size: 0.75em;
+}
+
+.small-font
+{
+	font-size: 0.6em;
 }
