@@ -1011,6 +1011,12 @@ p.hint
 	font-size: 0.8em;
 }
 
+p.hint.news
+{
+	color: green;
+	font-size: 0.9em;
+}
+
 .text-align-left
 {
 	text-align: left;
