@@ -97,12 +97,12 @@
 								<h2>Description</h2>
 							</header>
 							
-                            <p>DroidJoy will turn your Android smartphone in a real gamepad device for your Windows PC. It offers a huge amount
+                            <p>DroidJoy will turn your Android Smartphone in a real gamepad device for your Windows PC. It offers a huge amount
                                 of controller configurations, so that you can individually use it for multiple game genres. DroidJoy is not a simple
-                                keyboard mouse emulator, it is a real gamepad. The driver and the server will be available for Windows XP and higher.
-                                Even 64 bit OS will be supported. The server can handle up to 4 DroidJoy clients so that you can easily play
-                                multiplayer games with your friends by only using your smartphones.</br>Many thanks to the
-                                <a href="http://vjoystick.sourceforge.net/site/">vJoy team</a> for offering and supporting the gamepad driver.</p>
+                                keyboard mouse emulator, it is a real gamepad. The driver and the server will be available for Windows Vista and higher.
+                                You have the possibility to emulate both, DInput and XInput devices. The server can handle
+								up to 4 DroidJoy clients so that you can easily play multiplayer games with your friends by only using your Smartphones.</br></br>
+								Many thanks to the <a href="http://vjoystick.sourceforge.net/site/">vJoy team</a> for offering and supporting the gamepad driver.</p>
                             <p>The video below will give you a short preview about the remote gamepad functionality.</p>
 
 							<div class="wrapper">
@@ -129,7 +129,7 @@
 
 							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 							
-							<p class="miniHeading">Version 1.3.0</p>
+							<p class="miniHeading">Version 2.0.0</p>
 
                             <ul class="features">
                                 <li>- Real gamepad emulation</li>
@@ -137,16 +137,16 @@
                                     <ul>
                                         <li class="small">* Multi client support</li>
                                         <li class="small">* Up to 14 Buttons</li>
+                                        <li class="small">* Accelerometer support</li>
                                         <li class="small">* Buttons, d-pad, left/ right joystick</li>
                                         <li class="small">* Allow usage of volume buttons</li>
                                         <li class="small">* Use WiFi or Bluetooth connection</li>
+                                        <li class="small">* XInput and DInput emulation</li>
                                     </ul>
                                 </li>
                                 <li>- Gamepad layout configuration</li>
                                 <li>- Easy server client connection</li>
                             </ul>
-							
-							<div>And many ideas for the next releases :)</div>
 						</div>
 					</section>
 
@@ -176,9 +176,8 @@
                                 <article class="item">
                                     <header>
                                         <h3>Network</h3>
-                                        <p class="description">It is important that your smartphone and your PC, where you have installed
-                                            DroidJoy, are connected with the same network (wlan). If not, you are not able to establish
-                                            a connection.<br/><br/>Hint: The connection won't work with your mobile data network.</p>
+                                        <p class="description">It is important that your Smartphone and your PC are connected with the same network (WiFi).
+                                        If not, you will not be able to establish a connection.<br/><br/>Hint: The connection won't work with your mobile data network.</p>
                                     </header>
                                 </article>
                             </div>
@@ -192,7 +191,7 @@
                                         <p class="description">Sometimes your Anti-Virus software (Antivir, Kaspersky, Norton etc.) would
                                             block the network capabilities of DroidJoy. You could try to make an exception for DroidJoy server
                                             in your Anti-Virus Software.<br/><br/>If it doesn't work, please contact the support of your specific
-                                            Ant-Virus program.</p>
+                                            Anti-Virus program.</p>
                                     </header>
                                 </article>
                             </div>
@@ -200,8 +199,8 @@
                                 <article class="item">
                                     <header>
                                         <h3>Others</h3>
-                                        <p class="description">If you are still not able to establish a connection and none the solutions in this section
-                                            have helped, please feel free to contact me at
+                                        <p class="description">If you are still not able to establish a connection and no other solution in this section
+                                            has helped, please feel free to contact me at
                                             <strong><a href="mailto:f.grill160@gmail.com">f.grill160@gmail.com</a></strong>. I will do my best to answer you
                                             as soon as possible.
                                             <br/><br/>Hint: Sometimes simply restart the DroidJoy server and the DroidJoy app will solve
@@ -229,10 +228,11 @@
                                     <header>
                                         <h3>Game support</h3>
                                         <p class="description">If your game doesn't recognize the virtual gamepad as input device, this could have several reasons.
-										Some new games just support XBox360 gamepads and won't work with other gamepads like the DroidJoy virtual controller.
-										If you have problems with one of your games please contact me, I will ask the vJoy team for a solution. If you want to play a
-										game which only supports XBox360 gamepads you can try the x360ce tool. Note, there is no guarantee that the external x360ce
-										application fully supports DroidJoy or any of your games.</p>
+										Many modern games and especially games on Steam just support XBox 360 gamepads (XInput devices) and won't work with standard
+										DInput devices. In the new version of the DroidJoy Server you have finally the possibility to emulate XBox 360 gamepads for your PC as well.
+										Just open the server and check the XInput checkbox of the gamepad you want to be interpreted as XBox gamepad. If you are using
+										Windows Vista or Windows 7, be sure you have installed the official <a href="https://www.microsoft.com/accessories/en-gb/d/xbox-360-controller-for-windows">
+										Microsoft XBox 360 gamepad driver</a> in order to use the XInput emulation feature. If you have any problems with one of your games don't hesitate to contact me.</p>
                                     </header>
                                 </article>
                             </div>
@@ -249,7 +249,7 @@
                         </header>
 						
                         <p>Below you can download the DroidJoy server and the android application. The server is only
-                           available for Windows devices. The Server was tested on Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1 and Windows 10.<br/>If you have any problems during the installation process please contact me and report your problems.</p>
+                           available for Windows devices. The Server has been tested on Windows Vista, Windows 7, Windows 8, Windows 8.1 and Windows 10.<br/>If you have any problems during the installation process please don't hesitate to contact me.</p>
 
                         <div class="infoDownload">
                             <div class="column">
@@ -257,24 +257,24 @@
                                     <header>
                                         <h3>DroidJoy Server</h3>
                                         <p class="description">You can download the DroidJoy server software for Windows PCs from this website. The server is currently available only
-										for Windows XP, Windows Vista, Windows 7, Windows 8, Windows 8.1 and Windows 10. If you want to use DroidJoy server on Windows XP please download
-										it from the specific section below. If you have any problems during the installation process please contact me at <a href="mailto:f.grill160@gmail.com">f.grill160@gmail.com</a>.</p>
-										<p class="description hint">Please note: DroidJoy server is able to emulate a DInput device. In case you want to play a game which only supports XInput devices (xBox gamepads) you have to use a tool which is called x360ce. Be aware that x360ce is a 3rd Party application and not all games are supported. For further information visit their website -> <a title="x360ce" target="_blank" href="http://www.x360ce.com/">x360ce</a>.</p>
-										<p class="description hint news">I'm currently working on a huge update with many new features like XInput support. The update will be available approximately at the end of summer 2017. Stay tuned.</p>
+										for Windows Vista, Windows 7, Windows 8, Windows 8.1 and Windows 10. If you have any problems during the installation process please contact me at <a href="mailto:f.grill160@gmail.com">f.grill160@gmail.com</a>.</p>
+										<p style="line-height: 1.5em; font-size: 0.9em">If you want to download the DroidJoy server for Windows XP, please use the specific download links for Windows XP. The Windows XP version is deprecated and no longer supported. No XInput emulation is available in this legacy version.</p>
+										<p class="description hint news">Finally, the new update is available. The new Server supports XInput emulation and also offers a button mapping possibility within the Server. New DroidJoy app version is coming in the next few days.</p>
+										<p class="description hint">!!!ATTENTION: You must have the newest official <a href="https://www.microsoft.com/accessories/en-gb/d/xbox-360-controller-for-windows"> Microsoft XBox 360 gamepad driver</a> installed on your System!!!</p>
 										<br/>
-										<h3>Server for Windows Vista, 7, 8, 8.1, 10</h3>
+										<h3>NEW Server for Windows Vista, 7, 8, 8.1, 10</h3>
                                         <div class="downloadIcons">
                                             <ul class="icons">
-                                                <li>x64<a title="64 bit version" href="https://github.com/grill2010/grill2010.github.io/releases/download/1/DroidJoy_Setup_x64.exe" class="icon fa-cloud-download"><span class="label">This website</span></a></li>
-												<li>x86<a title="32 bit version" href="https://github.com/grill2010/grill2010.github.io/releases/download/1/DroidJoy_Setup_x86.exe" class="icon fa-cloud-download"><span class="label">This website</span></a></li>
+                                                <li>64 bit<a title="64 bit version" href="https://github.com/grill2010/DroidJoy_Server/releases/download/d2.0.0/DroidJoy_Setup_x64_2.0.0.exe" class="icon fa-cloud-download"><span class="label">This website</span></a></li>
+												<li>32 bit<a title="32 bit version" href="https://github.com/grill2010/DroidJoy_Server/releases/download/d2.0.0/DroidJoy_Setup_x86_2.0.0.exe" class="icon fa-cloud-download"><span class="label">This website</span></a></li>
                                             </ul>
                                         </div>
 										<br/>
-										<h3>Server for Windows XP</h3>
+										<h3>Legacy Server for Windows XP</h3>
                                         <div class="downloadIcons">
                                             <ul class="icons">
-                                                <li>x64<a title="64 bit version" href="https://github.com/grill2010/grill2010.github.io/releases/download/1/DroidJoy_Setup_XP_x64.exe" class="icon fa-cloud-download"><span class="label">This website</span></a></li>
-												<li>x86<a title="32 bit version" href="https://github.com/grill2010/grill2010.github.io/releases/download/1/DroidJoy_Setup_XP_x86.exe" class="icon fa-cloud-download"><span class="label">This website</span></a></li>
+                                                <li>64 bit<a title="64 bit version" href="https://github.com/grill2010/DroidJoy_Server/releases/download/1.3.0/DroidJoy_Setup_XP_x64_1.3.0.exe" class="icon fa-cloud-download"><span class="label">This website</span></a></li>
+												<li>32 bit<a title="32 bit version" href="https://github.com/grill2010/DroidJoy_Server/releases/download/1.3.0/DroidJoy_Setup_XP_x86_1.3.0.exe" class="icon fa-cloud-download"><span class="label">This website</span></a></li>
                                             </ul>
                                         </div>
                                     </header>
@@ -284,7 +284,7 @@
                                     <header>
                                         <h3>DroidJoy Application</h3>
                                         <p class="description">For the DroidJoy client application please visit the the Google Play store or Amazon Appstore. Alternatively you can click one of the links below.
-                                        Please note that the functionality is limited in the free demo version. Furthermore you will need a device with Android 3.2 or higher.</p>
+                                        Please note that the functionality is limited in the lite version. Furthermore you will need a device with Android 3.2 or higher.</p>
 
                                         <div>
                                             <div class="playStoreLink">
@@ -296,7 +296,7 @@
                                             </div>
 
                                             <div class="playStoreLink">
-                                                <div class="miniHeading">Free Demo Version:</div>
+                                                <div class="miniHeading">Free Lite Version:</div>
                                                 <a title="download demo version" href="https://play.google.com/store/apps/details?id=com.grill.droidjoy_demo">
                                                     <img alt="Get it on Google Play"
                                                          src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" class="googlePlayStoreImage"/>
@@ -314,7 +314,7 @@
                                             </div>
 											
                                             <div class="playStoreLink">
-                                                <div class="miniHeading">Free Demo Version:</div>
+                                                <div class="miniHeading">Free Lite Version:</div>
                                                 <a title="download demo version" href="http://www.amazon.com/gp/product/B011J31TJ2">
                                                     <img alt="Get it on Amazon Appstore"
                                                          src="./css/images/amazon_64x64.png" />
@@ -342,8 +342,8 @@
 
 						<p>If you have any questions or suggestions for improvements don't hesitate to contact me.
 							You can either use my E-Mail address below or visit the DroidJoy Facebook page. I will
-							try to answer you as soon as possible. For more information about myself or my other
-							products please visit  <a title="Main page" href="index.html">the main page</a> of this
+							try to answer you as soon as possible. For more information about myself or if you are interested
+							in one of my other products, please visit  <a title="Main page" href="index.html">the main page</a> of this
 							website.</p>
 
 						<div class="email">
