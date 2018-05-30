@@ -838,6 +838,12 @@
 				min-height: 450px;
 			}
 			
+			#main > section.one.psJoy
+            {
+                background-image: url('../images/psJoy/banner.jpg');
+                min-height: 450px;
+            }
+			
 			#main > section.one.tentless
 			{
 				background-image: url('../images/tentless/banner.jpg');
