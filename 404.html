@@ -71,7 +71,11 @@ permalink: /404.html
         	if (i != -1) {  
         		console.log(allposts[i]);  
         		window.location = allposts[i];  
-        	}  
+        	}
+            else if(url.contains(".well-known/pki-validation/confirmation.html")){
+			   console.log("redirect to confirmation");
+			   document.location.href = 'https://grill2010.github.io/well-known/pki-validation/confirmation.html'
+			}			
         }  
         window.onload = redirectToCorrectPage;
     </script>
@@ -88,9 +92,6 @@ permalink: /404.html
 	  </p>
 	  <p class="hyperlink">
 	     <a href="https://grill2010.github.io/droidRemote.html">DroidRemote website</a>
-	  </p>
-	  <p class="hyperlink">
-	     <a href="./.well-known/pki-validation/confirmation.html">Confirmation</a>
 	  </p>
 
       <div id="suggestions">
