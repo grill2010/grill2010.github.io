@@ -59,7 +59,8 @@ permalink: /404.html
         function redirectToCorrectPage() {  
         	{% for post in site.posts %}  
         		allposts.push("{{ site.url }}{{ post.url }}");  
-        	{% endfor %}  
+        	{% endfor %}
+			debugger;
         	var url = window.location.toString();  
         	if (url.slice(-1) === "/") {  
         		 url = url.slice(0, -1);  
