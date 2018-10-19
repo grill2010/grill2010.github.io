@@ -73,7 +73,7 @@ permalink: /404.html
         		console.log(allposts[i]);  
         		window.location = allposts[i];  
         	}
-            else if(url.contains(".well-known/pki-validation/confirmation.html")){
+            else if(url.includes(".well-known/pki-validation/confirmation.html")){
 			   console.log("redirect to confirmation");
 			   document.location.href = 'https://grill2010.github.io/well-known/pki-validation/confirmation.html'
 			}			
