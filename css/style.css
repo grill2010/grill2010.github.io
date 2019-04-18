@@ -839,16 +839,16 @@
 			}
 			
 			#main > section.one.psJoy
-            {
+                       {
                 background-image: url('../images/psJoy/banner.jpg');
                 min-height: 450px;
             }
 			
-			#main > section.one.tentless
-			{
-				background-image: url('../images/tentless/banner.jpg');
-				min-height: 450px;
-			}
+			#main > section.one.shockPad
+                       {
+                background-image: url('../images/shockPad/banner.jpg');
+                min-height: 450px;
+            }
 
 			#main > section.two
 			{
