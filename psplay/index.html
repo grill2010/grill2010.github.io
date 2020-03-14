@@ -75,9 +75,10 @@
                             <li><a href="#line3">Layouts and Profiles</a></li>
                             <li><a href="#line4">Supported gamepads</a></li>
                             <li><a href="#line5">Playing over the internet</a></li>
-                            <li><a href="#line6">Gamepad button mapping</a></li>
-                            <li><a href="#line7">Troubleshooting</a></li>
-                            <li><a href="#line8">Report problem</a></li>
+							<li><a href="#line6">UPnP auto configuration</a></li>
+                            <li><a href="#line7">Gamepad button mapping</a></li>
+                            <li><a href="#line8">Troubleshooting</a></li>
+                            <li><a href="#line9">Report problem</a></li>
                         </ul>
                     </nav >
                 </div>
@@ -246,18 +247,21 @@
                         <div class="row">
 
                             <div class="col-md-12">
-                                <p>PSPlay can also be used over the internet when you are not at home. This will require to set up port forwarding on your router at home in order to connect to your PS4 from outside your local network. To manually configure port forwarding on your router the following ports to the internal IP-Address of your PS4 must be forwarded.</p>
+                                <p>PSPlay can also be used over the internet when you are not at home. This will require to set up port forwarding on your router at home in order to connect to your PS4 from outside your local network, otherwise connecting from outside your network at home to your PS4 will not work. To manually configure port forwarding on your router the following ports to the internal IP-Address of your PS4 must be forwarded.</p>
                                 <ul>
                                     <li><strong>UDP 987</strong> </li>
                                     <li><strong>UDP & TCP 9295</strong></li>
                                     <li><strong>UDP 9296</strong></li>
                                     <li><strong>UDP 9297</strong></li>
                                 </ul>
-                                <p>Once you've set up port forwarding correctly, you need to figure out the public IP-Address of your router. Go to <a href="http://www.whatsmyip.org/">http://www.whatsmyip.org/</a> from a device connected to your network at home, then enter the IP-Address you get there into the "Direct Connect" dialog of PSPlay. If you don't get an error, you should be all set. If you get an error like "IO_EXCEPTION_OCCURRED. GET Session" multiple times then there might be something wrong with the port forwarding settings. The public IP-Address of your router can change from time to time, this depends on your provider. So if streaming over the internet suddenly stop working and it worked before perfectly fine, please be sure to check the public IP-Address of your router again.</p>
+                                <p>Once you've set up port forwarding correctly, you need to figure out the public IP-Address of your router. Go to <a href="http://www.whatsmyip.org/">http://www.whatsmyip.org/</a> <b>with a device connected to your network at home</b>, then enter the IP-Address you get there into the "Direct Connect" dialog of PSPlay. If you don't get an error, you should be all set. If you get an error like "IO_EXCEPTION_OCCURRED. GET Session" multiple times then there might be something wrong with the port forwarding settings. The public IP-Address of your router can change from time to time, this depends on your internet provider. So if streaming over the internet suddenly stop working and it worked before perfectly fine, please be sure to check the public IP-Address of your router again.</p>
                                 <p>You can find a guide on how to port forward on most routers <a href="https://portforward.com/router.htm">HERE</a> (Don't be bothered by the "Portforward Network Utilities" ad, just close it, this is not required). Furthermore, it is strongly recommended to configure a static IP-Address for your PS4. Otherwise you will have to adjust port forwarding settings every time your PS4 gets another IP-Address from your router (which could occur every time the PS4 restarts). An example of how to configure a static IP for your PS4 can be found <a href="https://portforward.com/networking/static-ip-ps4">HERE</a></p>
                                 <p>Some routers allow you to configure a port range (start and end point port) or even to configure an internal and external port. If that is the case just provide the same port on all these available options.</p>
                                 <p>If port forwarding is configured correctly you can connect to your PS4 by using the "Direct Connect" button on the Home screen of the PSPlay app. You would need to enter the public IP-Address of your router.</p>
-                                <p><strong>Please note: the connection quality and streaming latency heavily depends on the quality of your internet connection and on many other external factors. If there are lot of interferences please try to reduce the resolution and the FPS settings.</strong></p>
+								<p>You can verify if the port forwarding was configured correctly by visiting following website <a href="https://www.canyouseeme.org/">https://www.canyouseeme.org/</a> <b>with a device connected to your network at home</b> and enter port <b>9295</b> in the "Port to Check" textbox. Canyouseeme should report that the port is open, if not than there is something wrong. Other ports are just active while streaming so you must enter only port 9295. If the other ports are configured correctly and canyouseeme reports that port 9295 is open connecting over the internet should work fine when you enter the public IP-Address of your router into the "Direct Connect" dialog of PSPlay.</p>
+                                <p>If something did not work please double check if you have configured the correct protocol for the individual port mapping rules on your router (UDP/ TCP). Port 9295 needs two rules, one for UDP and one for TCP. If you still have some problems, please check if the public IP-Address which you should see somewhere on the Dashboard of your router (probably in the WAN section) is equal to the one which you get by visiting <a href="http://www.whatsmyip.org/">http://www.whatsmyip.org/</a> with a device inside your network at home. If not, then this is probably an indication that your internet provider doesn't give your router a "real" public IP-Address, which means your router is not accessible over the internet. If that is the case you have to contact your internet provider and ask if they could provide you a "real" public IP-Address, otherwise connecting to your PS4 from outside will not be possible for you.</p>
+								<p>Another problem could be if your internet provider doesn't provide your router an <a href="https://en.wikipedia.org/wiki/IPv4">IPv4</a> but only an <a href="https://en.wikipedia.org/wiki/IPv6">IPv6</a> IP-Address. As the PS4 is not IPv6 ready you must contact your internet provider and ask if they could also assign an IPv4 address to your router in addition to the IPv6 address. Please note, if you are affected by the last two problems (no "real" public IP-Address, only an IPv6 IP-Address) there is nothing PSPlay can do about. Providing a bad rating doesn't help either as I can't workaround these errors. If you have any questions you can contact me anytime.</p>
+								<p><strong>Please note: the connection quality and streaming latency heavily depends on the quality of your internet connection and on many other external factors. If there are lot of interferences please try to reduce the resolution and the FPS settings.</strong></p>
                             </div>
                         </div>
                         <!-- end row -->
@@ -266,6 +270,49 @@
                     <!-- end section -->
 
                     <section id="line6" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">UPnP auto configuration <a href="#top">#back to top</a><hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <div class="row">
+
+                            <div class="col-md-12">
+                                <p>In order to be able to connect from outside your network at home to your PS4 you have to configure your router to allow this. This is a technical requirement and if you do not configure your router, connecting from outside your network at home to your PS4 will not work. PSPlay can automatically configure your router for playing over the internet but your router has to support <a href="https://en.wikipedia.org/wiki/Universal_Plug_and_Play">UPnP</a> and this feature must be enabled on your router. Please note, not all router support UPnP or do not allow an automatic configuration because of security reasons. If PSPlay reports that it is not able to find your router or that an other error occurred you must configure your router manually. You can find more information <a href="#line5">here</a>. As there are 1000 of different router models available PSPlay cannot guarantee that an automatic configuration will work on all routers. Some routers even have a faulty UPnP implementation which also prevents an automatic configuration.</p>
+                                <p>If your router do not support UPnP or an automatic configuration is not possible because of security reasons you can simply configure your router manually. All information for a manual configuration can be found <a href="#line5">here</a>. Below you can find an explanation of the common error messages:</p>
+								
+								<h3>Router not found. Error: 0x15</h3>
+								<p>This means that either UPnP is not enabled on your router or that the UPnP implementation of your router is not compatible with PSPlay. You have to check if your router supports UPnP and if this feature is enabled. If it is enabled and it is still not working you have to configure your router manually. All information for a manual configuration can be found <a href="#line5">here</a>.</p>
+                            
+								<h3>An error occurred. Error: 0x00</h3>
+								<p>An unexpected error occurred while PSPlay was configuring your router. Be sure you are connected to the same WiFi network than your PS4. Your router might not fully support UPnP or is blocking the configuration attempt because of security reasons. You might need to configure your router manually. All information for a manual configuration can be found <a href="#line5">here</a>.</p>
+							
+                                <h3>Could not automatically configure router. Error: 0x16</h3>
+								<p>Your router does not allow an automatic configuration because of security reasons. You have to configure your router manually. All information for a manual configuration can be found <a href="#line5">here</a>.</p>
+							
+							    <h3>An unknown error occurred. Error: 0x17</h3>
+								<p>An unknown error occurred while configuring your router. Your router may not fully support UPnP or the UPnP version of your router is not compatible with PSPlay. You have to configure your router manually. All information for a manual configuration can be found <a href="#line5">here</a>.</p>
+							
+							    <h3>Router partially configured. Warning: 0x05</h3>
+								<p>Not all port forwarding rules could be configured correctly. Some routers do not allow to automatically configure port forwarding rules for ports smaller than 1024. You can probably play remotely but you will not be able to wake up your PS4 while you are not at home. It is strongly recommended to configure your router manually and add the missing port forwarding rule. All information for a manual configuration can be found <a href="#line5">here</a>.</p>
+							
+								<h3>Different public IPs detected. Warning: 0x06</h3>
+								<p>Your router returned a unexpected public IP-Address. This could be an indication that your provider does not give your router a "real" public IP-Address. This means your router is not reachable from outside your network. Other possibilities for this warning could be that you have a double NAT configuration at home (your router is behind another router which creates two different networks) or that you are using a hybrid router with two different network technologies like DSL and LTE. The latter should not be a problem, however if you have a double NAT configuration at home or if your internet provider does not provide your router a real public IPv4, playing over the internet will probably not be possible for you. In any case you should contact your internet provider and ask if your router has a "real" public IP-Address and if not if they can assign you one.</p>
+							
+								<h3>Your router has no IPv4-Address. Warning: 0x07</h3>
+								<p>If your router does not have an <a href="https://en.wikipedia.org/wiki/IPv4">IPv4</a> but only an <a href="https://en.wikipedia.org/wiki/IPv6">IPv6</a> IP-Address you can not connect to your PS4 from outside your network. You must contact your internet provider and ask if they can assign your router an IPv4-Address in addition to your IPv6-Address.</p>
+							</div>
+                        </div>
+                        <!-- end row -->
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line7" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
@@ -287,7 +334,7 @@
                     </section>
                     <!-- end section -->
 
-                    <section id="line7" class="section">
+                    <section id="line8" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
@@ -344,11 +391,15 @@
 							<li>Disable "USB audio routing" in the developer options</li>
 							<li>You may have to restart the PSPlay app and remove and reconnect the Dualshock controller</li>
                         </ol>
-
+						
+						<h4>PSPlay does not work correctly on my Chome OS device</h4>
+						
+						<p>Chrome OS offers Android app support, however some functionalities are limited and will not work. First of all, automatically discover your PS4 will not work as the firewall on Chrome OS devices is blocking the discovery request. In order to register with your PS4 or to simply connect, you have to enter the IP-Address of your PS4 manually (if you want to connect over mobile data you have to enter the public IP-Address of your router. You can find more information <a href="#line5">here</a>). Furthermore, some Chrome OS devices have faulty hardware decoders which may interfere the streaming experience. PSPlay was not designed especially for Chrome OS devices but only for Android and Android TV devices. I do not want to prevent installations on Chrome OS devices because on some Chrome OS devices PSPlay might work quite well, but please keep in mind that there could be some potential limitations when you are using PSPlay on Chrome OS.</p>
+						
                     </section>
                     <!-- end section -->
 
-                    <section id="line8" class="section">
+                    <section id="line9" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
