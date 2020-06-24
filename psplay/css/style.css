@@ -369,3 +369,59 @@ a:hover {
 .navbar-inverse li.btn a {
     color: #ffffff !important;
 }
+
+.flagContainer {
+	z-index: 9999;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
+
+.flagContainer .flagLink{
+	float: left;
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+}
+
+.flagContainer .flag{
+	width: 36px;
+	height: 36px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	display: block;
+}
+
+.flagContainer .flag.germany{
+	background-image: url("../images/germanyFlag.png");
+}
+
+.flagContainer .flag.france{
+	background-image: url("../images/franceFlag.png");
+}
+
+.flagContainer .flag.spain{
+	background-image: url("../images/spainFlag.png");
+}
+
+.flagContainer .flag.italy{
+	background-image: url("../images/italyFlag.png");
+}
+
+.flagContainer .flag.russia{
+	background-image: url("../images/russiaFlag.png");
+}
+
+.flagContainer .flag.english{
+	background-image: url("../images/englishFlag.png");
+}
+
+.flagContainer .flag.china{
+	background-image: url("../images/chinaFlag.png");
+}
+
+.flagContainer .flag.taiwan{
+	background-image: url("../images/taiwanFlag.png");
+}
