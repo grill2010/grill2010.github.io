@@ -425,3 +425,11 @@ a:hover {
 .flagContainer .flag.taiwan{
 	background-image: url("../images/taiwanFlag.png");
 }
+
+.flagContainer .flag.korea{
+	background-image: url("../images/koreaFlag.png");
+}
+
+.flagContainer .flag.portugal_brazil{
+	background-image: url("../images/portBrazFlag.png");
+}
