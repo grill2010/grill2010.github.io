@@ -433,3 +433,8 @@ a:hover {
 .flagContainer .flag.portugal_brazil{
 	background-image: url("../images/portBrazFlag.png");
 }
+
+.flagContainer .flag.japan{
+	background-image: url("../images/japanFlag.png");
+}
+
