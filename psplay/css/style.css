@@ -438,3 +438,8 @@ a:hover {
 	background-image: url("../images/japanFlag.png");
 }
 
+
+.flagContainer .flag.india{
+	background-image: url("../images/indiaFlag.png");
+}
+

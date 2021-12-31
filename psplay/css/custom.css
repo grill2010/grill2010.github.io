@@ -26,7 +26,7 @@
 @media (min-width: 992px) {
     .affix,
     .affix-bottom {
-        width: 213px
+        width: 223px
     }
     .affix {
         position: fixed;
@@ -45,7 +45,7 @@
 @media (min-width: 1200px) {
     .affix,
     .affix-bottom {
-        width: 263px
+        width: 273px
     }
 }
 
