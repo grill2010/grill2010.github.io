@@ -150,7 +150,8 @@
                                             <p>You need to meet following requirements to fully enjoy PSPlay.</p>
                                             <ol>
                                                 <li>PS5 or PS4 console</li>
-                                                <li>Android device with at least Android 5.0</li>
+                                                <li>Android device with at least Android 5.0</li> or
+												<li>iPhone with iOS 14+ or an AppleTV with tvOS 15+</li>
                                                 <li>Dual core CPU highly recommended</li>
                                                 <li>2 GB or more of RAM</li>
                                                 <li>1024 × 768 or higher display resolution</li>
@@ -284,7 +285,7 @@
                         </div>
                         <!-- end row -->
 
-                        <p>You can connect any controller which is compatibly with Android 5.0 an above via Bluetooth or USB. Because of performance problems due hardware limitations on many Android devices it is strongly recommended to use a wired USB connection for your gamepad. Otherwise high input latency and input delays can occur. If you ever encounter some unusual lags please connect your gamepad via USB if possible. Please note that this is not the fault of PSPlay, the reason why this happens is because of some hardware limitations of your Android device and that there is no way that PSPlay could fix this.</p>
+                        <p>On Android you can connect any controller which is compatibly with Android 5.0 an above via Bluetooth or USB. On iOS or tvOS any MFI compatible controller should work. Because of performance problems due hardware limitations on many Android devices it is strongly recommended to use a wired USB connection for your gamepad on Android. Otherwise high input latency and input delays can occur. If you ever encounter some unusual lags please connect your gamepad via USB if possible. Please note that this is not the fault of PSPlay, the reason why this happens is because of some hardware limitations of your Android device and that there is no way that PSPlay could fix this.</p>
                         <p>If the button mapping of your controller is weird you can create a button mapping profile for your controller by clicking "Button mapping" in the navigation drawer. If one of your gamepad buttons is recognized as Home button you will not be able to use this button as an app can not override this behaviour. However, you can then use the "Use 2 buttons combination" feature in the mapping process instead. If you encounter some unusual button mapping please feel free to contact me at <a href="mailto:f.grill160@gmail.com">f.grill160@gmail.com</a></p>
 
                     </section>
@@ -453,13 +454,13 @@
 						
 						<p>Thanks to <a href="https://github.com/CSystem77" target="_blank">CSystem77</a> for providing this script at trinket.io.</p>
 
-                        <h4>My controller isn't working and the mapping feature doesn't register any inputs</h4>
+                        <h4>My controller isn't working on my Android device and the mapping feature doesn't register any inputs</h4>
 						
 						<p>It's very likely that you are suffering from an Android 11 bug introduced by Google. You can find more <a href="https://www.xda-developers.com/android-11-trouble-getting-games-recognize-their-controllers/amp/" target="_blank">information here</a>. Here is the official Google bug report with a few suggested workarounds <a href="https://issuetracker.google.com/issues/163120692?pli=1" target="_blank">https://issuetracker.google.com/issues/163120692?pli=1</a>. On some devices, it helps to disable all accessibility services and restart the device. It's really an annoying issue which is already fixed in Android 12. It's not the fault of PSPlay.</p>
 
                         <h4>Poor connection quality</h4>
 
-                        <p>If possible be sure your Android device is connected to a 5GHz WiFi network instead of a 2.4GHZ. 5GHz networks are usually less prone to interference.</p>
+                        <p>If possible be sure your device is connected to a 5GHz WiFi network instead of a 2.4GHZ. 5GHz networks are usually less prone to interference.</p>
 
                         <p>Be sure your PS5/ PS4 is connected to the internet via LAN cable.</p>
 
@@ -507,7 +508,7 @@
 						
 						<h4>PSPlay does not work correctly on my Chrome OS device</h4>
 						
-						<p>Chrome OS offers Android app support, however some functionalities are limited and will not work. First of all, automatically discover your PS5/ PS4 will not work as the firewall on Chrome OS devices is blocking the discovery request. In order to register with your PS5/ PS4 or to simply connect, you have to enter the IP-Address of your PS5/ PS4 manually (if you want to connect over mobile data you have to enter the public IP-Address of your router. You can find more information <a href="#line5">here</a>). Furthermore, some Chrome OS devices have faulty hardware decoders which may interfere the streaming experience. PSPlay was not designed especially for Chrome OS devices but only for Android and Android TV devices. I do not want to prevent installations on Chrome OS devices because on some Chrome OS devices PSPlay might work quite well, but please keep in mind that there could be some potential limitations when you are using PSPlay on Chrome OS.</p>
+						<p>Chrome OS offers Android app support, however some functionalities are limited and will not work. First of all, automatically discover your PS5/ PS4 will not work as the firewall on Chrome OS devices is blocking the discovery request. In order to register with your PS5/ PS4 or to simply connect, you have to enter the IP-Address of your PS5/ PS4 manually (if you want to connect over mobile data you have to enter the public IP-Address of your router. You can find more information <a href="#line5">here</a>). Furthermore, some Chrome OS devices have faulty hardware decoders which may interfere the streaming experience. PSPlay was not designed especially for Chrome OS devices but only for Android, Android TV, iOS and AppleTV devices. I do not want to prevent installations on Chrome OS devices because on some Chrome OS devices PSPlay might work quite well, but please keep in mind that there could be some potential limitations when you are using PSPlay on Chrome OS.</p>
 						
                     </section>
                     <!-- end section -->
@@ -530,7 +531,7 @@
                         <p>Please include following information in your email.</p>
                         <ol>
                             <li>Smartphone model</li>
-                            <li>Android version</li>
+                            <li>Android/ iOS version</li>
                             <li>Explain what you did and what did not work</li>
                             <li>Explain what should be the expected behavior</li>
                             <li>Include the PSPlay log file if possible</li>
